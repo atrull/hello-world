@@ -1,0 +1,9 @@
+task build(type: Exec) {
+  executable "/Z110S/usr/lpp/cobol/bin/cob2"
+  args "hello.cbl", "-o", "hello"
+}
+
+task run(type: Exec) {
+  commandLine "./hello"
+}
+
